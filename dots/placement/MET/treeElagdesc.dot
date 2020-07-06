@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="CCR <= 5.5\ngini = 0.468\nsamples = 8416\nvalue = [194, 2724, 5498]\nclass = None", fillcolor="#c29ff2"] ;
+1 [label="sdComm <= 0.65\ngini = 0.165\nsamples = 2990\nvalue = [194, 2724, 72]\nclass = DCP", fillcolor="#4ce78d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sdComm <= 0.065\ngini = 0.126\nsamples = 2766\nvalue = [162, 2580, 24]\nclass = DCP", fillcolor="#47e78a"] ;
+1 -> 2 ;
+3 [label="nbproc <= 4.5\ngini = 0.202\nsamples = 1418\nvalue = [162, 1256, 0]\nclass = DCP", fillcolor="#53e891"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 4 ;
+9 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 9 ;
+16 [label="nbproc <= 4.5\ngini = 0.035\nsamples = 1348\nvalue = [0, 1324, 24]\nclass = DCP", fillcolor="#3de583"] ;
+2 -> 16 ;
+17 [label="(...)", fillcolor="#C0C0C0"] ;
+16 -> 17 ;
+20 [label="(...)", fillcolor="#C0C0C0"] ;
+16 -> 20 ;
+21 [label="gini = 0.52\nsamples = 224\nvalue = [32, 144, 48]\nclass = DCP", fillcolor="#93f1ba"] ;
+1 -> 21 ;
+22 [label="gini = 0.0\nsamples = 5426\nvalue = [0, 0, 5426]\nclass = None", fillcolor="#8139e5"] ;
+0 -> 22 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

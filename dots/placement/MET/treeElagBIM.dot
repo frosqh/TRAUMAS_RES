@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="sdComp <= 0.065\ngini = 0.5\nsamples = 8416\nvalue = [4208, 4208]\nclass = False", fillcolor="#ffffff"] ;
+1 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = False", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="graphDepth <= 3.5\ngini = 0.5\nsamples = 8414\nvalue = [4207, 4207]\nclass = False", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="nbproc <= 4.5\ngini = 0.5\nsamples = 1426\nvalue = [713, 713]\nclass = False", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="sdComm <= 0.065\ngini = 0.5\nsamples = 830\nvalue = [415, 415]\nclass = False", fillcolor="#ffffff"] ;
+3 -> 4 ;
+5 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 5 ;
+6 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 6 ;
+23 [label="sdComm <= 0.065\ngini = 0.5\nsamples = 596\nvalue = [298, 298]\nclass = False", fillcolor="#ffffff"] ;
+3 -> 23 ;
+24 [label="(...)", fillcolor="#C0C0C0"] ;
+23 -> 24 ;
+25 [label="(...)", fillcolor="#C0C0C0"] ;
+23 -> 25 ;
+32 [label="nbproc <= 4.5\ngini = 0.5\nsamples = 6988\nvalue = [3494, 3494]\nclass = False", fillcolor="#ffffff"] ;
+2 -> 32 ;
+33 [label="CCR <= 5.05\ngini = 0.5\nsamples = 3572\nvalue = [1786, 1786]\nclass = False", fillcolor="#ffffff"] ;
+32 -> 33 ;
+34 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 34 ;
+39 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 39 ;
+102 [label="graphDepth <= 6.5\ngini = 0.5\nsamples = 3416\nvalue = [1708, 1708]\nclass = False", fillcolor="#ffffff"] ;
+32 -> 102 ;
+103 [label="(...)", fillcolor="#C0C0C0"] ;
+102 -> 103 ;
+124 [label="(...)", fillcolor="#C0C0C0"] ;
+102 -> 124 ;
+}
